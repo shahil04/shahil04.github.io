@@ -109,6 +109,42 @@
   transform: scale(1.1);
 }
 
+/* Skills Section Styling */
+#skills-section .box {
+  border-left: 4px solid #ffbd39;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+#skills-section .box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+#skills-section .box h3 {
+  color: #ff6b00;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#skills-section .box p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+#skills-section .box strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.underline {
+  height: 3px;
+  background-color: #ffbd39;
+  width: 50px;
+  margin-bottom: 2rem;
+}
 
 </style>
 
@@ -128,6 +164,7 @@
 	        <ul class="navbar-nav nav ml-auto">
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
 	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
@@ -316,8 +353,80 @@
     </section>
 
 
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="ftco-section ftco-no-pb" id="skills-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Skills</h1>
+            <h2 class="mb-4">Technical Skills</h2>
+            <p>Comprehensive skill set across Data Science, Machine Learning, and Generative AI</p>
+          </div>
+        </div>
 
-	
+        <div class="row">
+          <!-- Languages and Tools -->
+          <div class="col-md-6 ftco-animate">
+            <div class="box p-4 bg-light">
+              <h3 class="mb-3">Languages & Tools</h3>
+              <p><strong>Python</strong> • SQL • Bash • Git • Jupyter Notebooks</p>
+              <p><strong>Databases:</strong> MySQL • PostgreSQL • MongoDB • Vector Databases (Pinecone, ChromaDB)</p>
+            </div>
+          </div>
+
+          <!-- Libraries & Frameworks -->
+          <div class="col-md-6 ftco-animate">
+            <div class="box p-4 bg-light">
+              <h3 class="mb-3">Libraries & Frameworks</h3>
+              <p><strong>Data Processing:</strong> NumPy • Pandas • PySpark</p>
+              <p><strong>ML/DL:</strong> Scikit-Learn • TensorFlow • Keras</p>
+              <p><strong>Web:</strong> Flask • FastAPI • Django</p>
+            </div>
+          </div>
+
+          <!-- Data Science & ML -->
+          <div class="col-md-6 ftco-animate">
+            <div class="box p-4 bg-light">
+              <h3 class="mb-3">Data Science & Machine Learning</h3>
+              <p><strong>Techniques:</strong> Data Collection • Preprocessing • Visualization • Feature Engineering</p>
+              <p><strong>Algorithms:</strong> Linear/Logistic Regression • KNN • Decision Tree • Random Forest • SVM • K-Means</p>
+              <p><strong>Deep Learning:</strong> Neural Networks • RNN • CNN • LSTM • Transformers • NLP • EDA • RestAPI</p>
+            </div>
+          </div>
+
+          <!-- Gen AI/Agentic AI -->
+          <div class="col-md-6 ftco-animate">
+            <div class="box p-4 bg-light">
+              <h3 class="mb-3">Gen AI & Agentic AI</h3>
+              <p><strong>LLMs:</strong> OpenAI • Claude • Gemini • Llama • HuggingFace</p>
+              <p><strong>Frameworks:</strong> LangChain • LangGraph • CrewAI • Prompt Engineering • RAG</p>
+              <p><strong>Advanced:</strong> MCP (Model Context Protocol) • Vector Embeddings • Multi-Agent Systems</p>
+            </div>
+          </div>
+
+          <!-- Data Analytics & Visualization -->
+          <div class="col-md-6 ftco-animate">
+            <div class="box p-4 bg-light">
+              <h3 class="mb-3">Data Analytics & Visualization</h3>
+              <p><strong>Tools:</strong> Power BI • Excel • Tableau</p>
+              <p><strong>Libraries:</strong> Matplotlib • Seaborn • Plotly • Pandas</p>
+            </div>
+          </div>
+
+          <!-- Big Data & MLOps -->
+          <div class="col-md-6 ftco-animate">
+            <div class="box p-4 bg-light">
+              <h3 class="mb-3">Big Data & MLOps</h3>
+              <p><strong>Big Data:</strong> PySpark • Distributed Computing</p>
+              <p><strong>MLOps:</strong> MLflow • Docker • GitHub Actions • CI/CD Pipelines</p>
+              <p><strong>Cloud:</strong> AWS • GCP • Hugging Face Spaces • Deployment Automation</p>
+            </div>
+          </div>
+        </div>
+    	</div>
+    </section>
+
+
     <section class="ftco-section ftco-no-pb" id="resume-section">
     	<div class="container">
     		<div class="row justify-content-center pb-5">
@@ -327,6 +436,83 @@
             <p>A dedicated and aspiring Data Scientist with Strong willingness to exhibit my proficiency in Deep learning and Machine Learning Algorithms in a professional environment.</p>
           </div>
         </div>
+
+		<div class="row">
+			<h1 class="big-4">Work Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Mar 2024 - Now</span>
+						<h2>Data Science Trainer</h2>
+						<span class="position">Itvedant</span>
+						<p class="mt-4">
+							<ul>
+								<li>Conduct classroom and hands-on training sessions in Data Science, Machine Learning, Python, SQL, Power BI, and Generative AI</li>
+								<li>Mentor students through projects, mock interviews, and placement preparation</li>
+								<li>Guide learners in building end-to-end industry-level ML and AI solutions</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Feb 2023 - July 2023</span>
+						<h2>Data Analyst</h2>
+						<span class="position">Fine Air Solutions</span>
+						<p class="mt-4">
+							<ul>
+								<li>Work on CRM data collection from different departments</li>
+								<li>Enhanced data accuracy and security protocols</li>
+								<li>Performed statistical and predictive analysis using Excel and PowerBI</li>
+								<li>Minimized operational costs by approximately 8%</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2020 - 2024</span>
+						<h2>Freelance Python Developer / Part-Time</h2>
+						<span class="position">Self-Employed</span>
+						<p class="mt-4">
+							<ul>
+								<li>Delivered training programs and designed curriculum in Python, Data Science, and Machine Learning</li>
+								<li>Mentored organizations including FlipRobo and IIDST</li>
+								<li>Developed solutions: Web Scraping, ETL pipelines, EDA, Machine Learning, Django applications</li>
+								<li>Created technical educational content and tutorials on YouTube</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Oct 2023 - Feb 2024</span>
+						<h2>Data Scientist Intern</h2>
+						<span class="position">PW Skills</span>
+						<p class="mt-4">
+							<ul>
+								<li>Developed end-to-end ML Project: Krishi Mitra - Website with Recommender, Prediction and Chatbot System</li>
+								<li>Integrated LLM Chatbot as Farming Expert using Google Gemini API</li>
+								<li>Achieved 99% accuracy using Random Forest techniques</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
 
 		<div class="row">
 			<h1 class="big-4">Training/Internship</h1>
@@ -417,6 +603,78 @@
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/shahil04/krishi-mitra" class="block-20 zoom-effect" style="background-image: url('images/proj_ai_1.jpg'); background-color: #f0f0f0;">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/shahil04/krishi-mitra">Krishi Mitra - AI Farming Expert System</a></h3>
+                <p>End-to-end ML project with crop recommendation, plant disease prediction, and LLM-powered chatbot using Gemini API. Achieved 99% accuracy with Deep Learning (ResNet 99.2%).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/shahil04/student-performance-mlops" class="block-20 zoom-effect" style="background-image: url('images/proj_ai_2.jpg'); background-color: #f0f0f0;">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/shahil04/student-performance-mlops">Student Performance Prediction - MLOps</a></h3>
+                <p>Complete MLOps-enabled ML application with EDA, feature engineering, Flask API, and cloud deployment. 88.4% prediction accuracy with production-ready infrastructure.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/shahil04/ai-interviewer" class="block-20 zoom-effect" style="background-image: url('images/proj_ai_3.jpg'); background-color: #f0f0f0;">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/shahil04/ai-interviewer">AI Interviewer - GenAI Platform</a></h3>
+                <p>Scalable GenAI solution integrating GPT, Claude, Gemini for interview prep and resume analysis. FastAPI backend with hallucination detection and context retention metrics.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/shahil04/crew-ai-research" class="block-20 zoom-effect" style="background-image: url('images/proj_ai_4.jpg'); background-color: #f0f0f0;">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/shahil04/crew-ai-research">Multi-Agent AI System - CrewAI</a></h3>
+				  <p>Autonomous multi-agent system for market research and product analysis. Integrated LLM-powered agents for data collection, competitor analysis, and report generation.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/shahil04/ats-resume-llm" class="block-20 zoom-effect" style="background-image: url('images/proj_ai_5.jpg'); background-color: #f0f0f0;">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/shahil04/ats-resume-llm">ATS Resume Optimizer - LLM App</a></h3>
+				  <p>OpenAI-powered application optimizing resumes for ATS. Achieved 50% improvement in ATS match rates using Claude and Gemini Pro APIs.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+
+	<!-- Additional Classic Projects Section -->
+	<br>
+	<br>
+	<div class="row">
+		<div class="col-12">
+			<h2 class="mb-4">Classic Machine Learning & Analytics Projects</h2>
+			<div class="underline" style="width: 100px;"></div>
+		</div>
+	</div>
+	<br>
+
+	<div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
               <a href="https://github.com/shahil04/end_to_end_ml_project" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
@@ -484,23 +742,23 @@
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="10">0</strong>
-                <span>Achievements</span>
+                <strong class="number" data-number="20">0</strong>
+                <span>Skills & Technologies</span>
               </div>
             </div>
           </div>
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="15">0</strong>
-                <span>Projects</span>
+                <strong class="number" data-number="20">0</strong>
+                <span>Projects Completed</span>
               </div>
             </div>
           </div>
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
-                <strong class="number" data-number="50">0+</strong>
+                <strong class="number" data-number="100">0+</strong>
                 <span>Mentored Students</span>
               </div>
             </div>
